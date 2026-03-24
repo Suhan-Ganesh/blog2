@@ -4,6 +4,10 @@ export interface Article {
   title: string;
   description: string;
   image: string;
+  content: string[];
+  author: string;
+  date: string;
+  additionalImages?: string[];
 }
 
 export interface Feature {
