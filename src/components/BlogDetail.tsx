@@ -51,6 +51,10 @@ const BlogDetail: React.FC = () => {
               <Calendar size={16} />
               {article.date}
             </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1 h-1 rounded-full bg-on-surface-variant"></span>
+              <span>{Math.ceil(article.content.join(' ').split(' ').length / 200)} min read</span>
+            </div>
           </div>
         </div>
 
@@ -63,32 +67,34 @@ const BlogDetail: React.FC = () => {
           />
         </div>
 
-        <div className="space-y-6 text-lg leading-relaxed text-on-surface-variant">
+        <div className="space-y-8 text-lg leading-relaxed text-on-surface-variant">
           {article.content.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+            <motion.p 
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className={index === 0 ? "first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:text-primary first-letter:leading-none" : ""}
+            >
+              {paragraph}
+            </motion.p>
           ))}
         </div>
 
-        {article.additionalImages && article.additionalImages.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
-            {article.additionalImages.map((img, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="rounded-xl overflow-hidden shadow-lg"
-              >
-                <img 
-                  src={img} 
-                  alt={`${article.title} detail ${index + 1}`} 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                />
-              </motion.div>
-            ))}
+        <div className="pt-12 border-t border-surface-container-highest">
+          <div className="bg-surface-container-low p-8 rounded-2xl flex flex-col md:flex-row items-center gap-6">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <User size={32} />
+            </div>
+            <div className="space-y-2 text-center md:text-left">
+              <h4 className="font-bold text-on-surface">About the Author: {article.author}</h4>
+              <p className="text-sm text-on-surface-variant">
+                A dedicated contributor to the Developer Insights community, focusing on {article.category.toLowerCase()} and the evolving landscape of modern software engineering.
+              </p>
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </motion.div>
   );

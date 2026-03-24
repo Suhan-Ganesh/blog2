@@ -14,10 +14,6 @@ export const ARTICLES: Article[] = [
       "The true power of Git lies in its branching model. Branches are lightweight and encourage experimentation. You can try out a new feature, and if it doesn't work, you can simply discard the branch without affecting the main codebase.",
       "Collaboration is where Git truly shines. Tools like GitHub and GitLab have built entire ecosystems around the pull request workflow, allowing for peer review and automated testing before code ever reaches production.",
     ],
-    additionalImages: [
-      'https://picsum.photos/seed/git1/800/400',
-      'https://picsum.photos/seed/git2/800/400',
-    ],
   },
   {
     id: 'ai-superhuman',
@@ -31,10 +27,6 @@ export const ARTICLES: Article[] = [
       "The narrative around AI often swings between utopian dreams and dystopian nightmares. For developers, the reality is much more practical: AI is the ultimate pair programmer.",
       "Large Language Models (LLMs) are exceptionally good at boilerplate, unit tests, and refactoring. By offloading these tasks to AI, developers can spend more time on high-level architecture and solving complex business problems.",
       "The key to thriving in the AI era is 'Prompt Engineering' and critical thinking. AI can generate code, but it's the developer's job to ensure that code is secure, efficient, and fits the overall system design.",
-    ],
-    additionalImages: [
-      'https://picsum.photos/seed/ai1/800/400',
-      'https://picsum.photos/seed/ai2/800/400',
     ],
   },
   {
@@ -50,10 +42,6 @@ export const ARTICLES: Article[] = [
       "Consider the 'Graph' data structure. It's the foundation of social networks, mapping relationships between millions of users. Or the 'B-Tree', which powers the databases that store almost all of the world's digital information.",
       "Choosing the right data structure is often the difference between a system that scales and one that collapses under its own weight. It's about understanding the trade-offs between time and space complexity.",
     ],
-    additionalImages: [
-      'https://picsum.photos/seed/data1/800/400',
-      'https://picsum.photos/seed/data2/800/400',
-    ],
   },
   {
     id: 'digital-resume',
@@ -67,10 +55,6 @@ export const ARTICLES: Article[] = [
       "In today's competitive job market, a degree is just the baseline. Employers are looking for proof of skill, and there's no better proof than a public track record of contributions.",
       "Open source is the ultimate equalizer. It doesn't matter where you went to school; what matters is the quality of your code and your ability to collaborate with others.",
       "Start small. Fix a typo in a README, or solve a minor bug in a library you use. Over time, these small contributions build into a portfolio that speaks louder than any resume.",
-    ],
-    additionalImages: [
-      'https://picsum.photos/seed/career1/800/400',
-      'https://picsum.photos/seed/career2/800/400',
     ],
   },
   {
@@ -86,10 +70,6 @@ export const ARTICLES: Article[] = [
       "Clean code is about intent. When you name a variable or a function, you're telling a story. If that story is clear, the system is easy to maintain. If it's muddled, technical debt accumulates.",
       "Refactoring is a continuous process. Don't wait for a 'cleanup day' that will never come. Leave the campground cleaner than you found it, one commit at a time.",
     ],
-    additionalImages: [
-      'https://picsum.photos/seed/code1/800/400',
-      'https://picsum.photos/seed/code2/800/400',
-    ],
   },
   {
     id: 'rise-of-no-code',
@@ -103,10 +83,6 @@ export const ARTICLES: Article[] = [
       "No-code tools are often dismissed by 'real' developers, but that's a mistake. These tools are powerful allies for rapid prototyping and building internal utilities.",
       "By using no-code for the simple stuff, developers can focus their energy on the unique, complex logic that defines their product. It's about efficiency and choosing the right tool for the job.",
       "The future of development is hybrid. We'll use high-level visual tools for the interface and low-level code for the performance-critical core. The boundaries are blurring.",
-    ],
-    additionalImages: [
-      'https://picsum.photos/seed/nocode1/800/400',
-      'https://picsum.photos/seed/nocode2/800/400',
     ],
   },
   {
@@ -122,10 +98,6 @@ export const ARTICLES: Article[] = [
       "Empathy is a superpower. When you understand the problems your users are facing, you build better solutions. When you understand the challenges your teammates are dealing with, you build a better team.",
       "The '10x developer' isn't just someone who writes 10x more code; it's someone who makes everyone around them 10x better through clear communication and mentorship.",
     ],
-    additionalImages: [
-      'https://picsum.photos/seed/soft1/800/400',
-      'https://picsum.photos/seed/soft2/800/400',
-    ],
   },
   {
     id: 'digital-hygiene',
@@ -139,10 +111,6 @@ export const ARTICLES: Article[] = [
       "In 2026, security is no longer an afterthought; it's a core requirement. The threats are more sophisticated, but the basics of digital hygiene still go a long way.",
       "Two-factor authentication (2FA) is non-negotiable. Password managers are essential. But beyond tools, it's about awareness. Most breaches start with a simple phishing email.",
       "Secure coding means thinking like an attacker. Validate every input, sanitize every output, and never trust the client. Security is a mindset, not a checklist.",
-    ],
-    additionalImages: [
-      'https://picsum.photos/seed/security1/800/400',
-      'https://picsum.photos/seed/security2/800/400',
     ],
   },
 ];

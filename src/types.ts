@@ -7,7 +7,6 @@ export interface Article {
   content: string[];
   author: string;
   date: string;
-  additionalImages?: string[];
 }
 
 export interface Feature {
